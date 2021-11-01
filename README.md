@@ -30,8 +30,6 @@ The repository also arranges the code according to the above described architect
 
 The results are saved as pickle files in the `results` folder on the Central Server. 
 
-All configuration options are given in `config.py` at the central server, which contains the architecture, model, and FL training hyperparameters.
-Note that `config.py` file must also be changed at the source edge server, destination edge server and at each device.  
 
 Currently, CIFAR10 dataset and Convolutional Neural Network (CNN) models are supported. The code can be extended to support other datasets and models.
 
@@ -57,7 +55,11 @@ rm -rf InstallPytrochScript
 ./install_python_pytorch.sh
 ```
 
-Then, modify the respective hostname and ip address in `config.py`. CLIENTS_CONFIG and CLIENTS_LIST in `config.py` are used for indexing and sorting.
+All configuration options are given in `config.py` at the central server, which contains the architecture, model, and FL training hyperparameters.
+Therefore, modify the respective hostname and ip address in `config.py`. CLIENTS_CONFIG and CLIENTS_LIST in `config.py` are used for indexing and sorting.
+Note that `config.py` file must be changed at the source edge server, destination edge server and at each device.  
+
+
 
 ```
 # Network configration
