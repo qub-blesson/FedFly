@@ -75,8 +75,8 @@ K = 4 # Number of devices
 
 # Unique clients order
 HOST2IP = {'raspberrypi3-1':'192.168.10.93', 'raspberrypi3-2':'192.168.10.31', 'raspberrypi4-1': '192.168.10.169', 'raspberrypi4-2': '192.168.10.116'}
-CLIENTS_CONFIG= {'192.168.10.31':0, '192.168.10.169':1, '192.168.10.93':2, '192.168.10.116':3 }
-CLIENTS_LIST= ['192.168.10.31', '192.168.10.169', '192.168.10.93', '192.168.10.116'] 
+CLIENTS_CONFIG= {'192.168.10.93':0, '192.168.10.31':1, '192.168.10.169':2, '192.168.10.116':3 }
+CLIENTS_LIST= ['192.168.10.93', '192.168.10.31', '192.168.10.169', '192.168.10.116'] 
 
 ```
 Finally, download the CIFAR10 datasets manually and put them into the `datasets/CIFAR10` folder (python version). 
