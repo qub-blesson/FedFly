@@ -9,7 +9,7 @@ Due to mobility, a device participating in Federated Learning (FL) may disconnec
 FedFly is implemented and evaluated in a hierarchical cloud-edge-device architecture on a lab-based testbed to validate the migration technique of edge-based FL. The testbed that includes four IoT devices, two edge servers, and one central server (cloud-like) running the VGG-5 DNN model. The empirical findings uphold and validates our claims in terms of training time and accuracy using balanced and imbalanced datasets when compared to state-of-the-art approaches, such as SplitFed. FedFly has a negligible overhead of up to 2 seconds but saves a significant amount of training time while maintaining accuracy.
 
 <p align="center">
-  <img src="FedFly System.png" alt="FedFly System width="400"/>
+  <img src="FedFly System.png" alt="FedFly System width="200"/>
 </p>
 
 More information on the steps in relation to distributed FL and the mobility of devices within the FedFly system are presented in the research article entitled, "FedFly: Towards Migration in Edge-based Distributed Federated Learning".
