@@ -43,6 +43,7 @@ The code is tested on Python 3 with Pytorch version 1.4 and torchvision 0.5.
 
 - Or one may also go to https://github.com/Rehmatkhan/InstallPytrochScript and follow the simple steps to install and configure pytorch and torchvision on all Raspberry devices.
 ```
+# install and configure pytorch and torchvision on Raspberry devices
 #move to sudo
 sudo -i
 #update
