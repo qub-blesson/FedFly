@@ -6,7 +6,7 @@
 
 Due to mobility, a device participating in Federated Learning (FL) may disconnect from one edge server and will need to connect to another edge server during FL training. This becomes more challenging when a Deep Neural Network (DNN) is partitioned between device and edge server referred to as edge-based FL. Moving a device without migrating the accompanying training data from a source edge server to the destination edge server will result in training for the device having to start all over again on the destination server. This will in turn affect the performance of edge-based FL and result in large training times. FedFly addresses mobility challenge of devices in edge-based distributed FL and the key research contributions are:
 
-1) The technique for migrating DNN in edge-based FL, which to the best of our knowledge is the first time to be considered in the context of edge-based FL.
+1) The technique for migrating DNN, which to the best of our knowledge is the first time to be considered in the context of edge-based distributed FL.
 
 2) The implementation and evaluation of FedFly in a hierarchical cloud-edge-device architecture that validates the migration technique of edge-based FL on a lab-based testbed. The experimental results are obtained from a lab-based testbed that includes four IoT devices, two edge servers, and one central server (cloud-like) running the VGG-5 DNN model. The empirical findings uphold and validates our claims in terms of training time and accuracy using balanced and imbalanced datasets when compared to state-of-the-art SL approach called SplitFed. FedFly has a negligible overhead of up to 2 seconds but saves a significant amount of training time while maintaining accuracy.
 
