@@ -26,7 +26,7 @@ The repository contains the source code of FedFly. The overall architecture is d
 2) Edge Servers (seperated as Source and Destination for migration)
 3) Devices
 
-The repository also arranges the Code folders according to the above described architecture.
+The repository also arranges the code according to the above described architecture.
 
 The results are saved as pickle files in the `results` folder on the Central Server. 
 
