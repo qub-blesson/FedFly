@@ -90,22 +90,18 @@ To test the code:
 ```
 python FedFly_serverrun.py --offload True #FedFly training
 ```
-
 #### Launch FedFly source edge server
 
 ```
 python FedFly_serverrun.py --offload True #FedFly training
 ```
 #### Launch FedFly destination edge server
-
 ```
 python FedFly_serverrun.py --offload True #FedFly training
 ```
 #### Launch FedFly devices
-
 ```
 python FedFly_clientrun.py --offload True #FedFly training
-
 ```
 
 ### Citation
