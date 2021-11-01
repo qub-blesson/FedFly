@@ -41,6 +41,18 @@ The code is tested on Python 3 with Pytorch version 1.4 and torchvision 0.5.
 - Pyotrch: https://github.com/FedML-AI/FedML-IoT/tree/master/pytorch-pkg-on-rpi
 
 - Or one may also go to https://github.com/Rehmatkhan/InstallPytrochScript and follow the simple steps to install and configure pytorch and torchvision on all Raspberry devices.
+```
+#move to sudo
+sudo -i
+#update
+apt update
+apt install git
+git clone https://github.com/Rehmatkhan/InstallPytrochScript.git
+mv InstallPytrochScript/install_python_pytorch.sh .
+chmod +x install_python_pytorch.sh
+rm -rf InstallPytrochScript
+./install_python_pytorch.sh
+```
 
 Then, modify the respective hostname and ip address in `config.py`. CLIENTS_CONFIG and CLIENTS_LIST in `config.py` are used for indexing and sorting.
 
