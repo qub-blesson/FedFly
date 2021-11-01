@@ -4,26 +4,22 @@
 
 ### About the research
 
-Due to mobility, a device participating in Federated Learning (FL) may disconnect from one edge server and will need to connect to another edge server during FL training. This becomes more challenging when a Deep Neural Network (DNN) is partitioned between device and edge server referred to as edge-based FL. Moving a device without migrating the accompanying training data from a source edge server to the destination edge server will result in training for the device having to start all over again on the destination server. This will in turn affect the performance of edge-based FL and result in large training times. FedFly addresses mobility challenge of devices in edge-based distributed FL and the key research contributions are:
+Due to mobility, a device participating in Federated Learning (FL) may disconnect from one edge server and will need to connect to another edge server during FL training. This becomes more challenging when a Deep Neural Network (DNN) is partitioned between device and edge server referred to as edge-based FL. Moving a device without migrating the accompanying training data from a source edge server to the destination edge server will result in training for the device having to start all over again on the destination server. This will in turn affect the performance of edge-based FL and result in large training times. FedFly addresses the  mobility challenge of devices in edge-based distributed FL. This research designs, develops and implements the technique for migrating DNN in the context of edge-based distributed FL.
 
-1) The technique for migrating DNN, which to the best of our knowledge is the first time to be considered in the context of edge-based distributed FL.
-
-2) The implementation and evaluation of FedFly in a hierarchical cloud-edge-device architecture that validates the migration technique of edge-based FL on a lab-based testbed. The experimental results are obtained from a lab-based testbed that includes four IoT devices, two edge servers, and one central server (cloud-like) running the VGG-5 DNN model. The empirical findings uphold and validates our claims in terms of training time and accuracy using balanced and imbalanced datasets when compared to state-of-the-art SL approach called SplitFed. FedFly has a negligible overhead of up to 2 seconds but saves a significant amount of training time while maintaining accuracy.
+FedFly is implemented and evaluated in a hierarchical cloud-edge-device architecture on a lab-based testbed to validate the migration technique of edge-based FL. The testbed that includes four IoT devices, two edge servers, and one central server (cloud-like) running the VGG-5 DNN model. The empirical findings uphold and validates our claims in terms of training time and accuracy using balanced and imbalanced datasets when compared to state-of-the-art approaches, such as SplitFed. FedFly has a negligible overhead of up to 2 seconds but saves a significant amount of training time while maintaining accuracy.
 
 <p align="center">
-  <img src="FedFly System.png" alt="FedFly System width="600"/>
+  <img src="FedFly System.png" alt="FedFly System width="400"/>
 </p>
 
 More information on the steps in relation to distributed FL and the mobility of devices within the FedFly system are presented in the research article entitled, "FedFly: Towards Migration in Edge-based Distributed Federated Learning".
                                                              
-FedFly was developed at the [Edge Computing Hub](https://edgehub.co.uk). 
-
 ### Code Structure
 
 The repository contains the source code of FedFly. The overall architecture is divided as follows: 
 
-1) Central Server (Central Server for the FedAverage)
-2) Edge Servers (seperated as Source and Destination for migration)
+1) Central server (Central server, such as a cloud location, for running the FedAverage algorithm)
+2) Edge servers (separated as Source and Destination for migration)
 3) Devices
 
 The repository also arranges the code according to the above described architecture.
@@ -37,10 +33,10 @@ Currently, CIFAR10 dataset and Convolutional Neural Network (CNN) models are sup
 
 The code is tested on Python 3 with Pytorch version 1.4 and torchvision 0.5. 
 
-In order to test the code, install Pytorch and torchvision on each IoT device (Raspberry Pis). One can install from pre-built PyTorch and torchvision pip wheel. Please download respective pip wheel as follows:
+In order to test the code, install Pytorch and torchvision on each IoT device (for example, Raspberry Pis as used in this work). One can install from pre-built PyTorch and torchvision pip wheel. Download respective pip wheel as follows:
 - Pyotrch: https://github.com/FedML-AI/FedML-IoT/tree/master/pytorch-pkg-on-rpi
 
-Or one may visit https://github.com/Rehmatkhan/InstallPytrochScript and follow the simple steps as follows:
+Or visit https://github.com/Rehmatkhan/InstallPytrochScript and follow the simple steps:
 ```
 # install and configure pytorch and torchvision on Raspberry devices
 #move to sudo
@@ -108,4 +104,4 @@ python FedFly_clientrun.py --offload True #FedFly training
 
 Please cite the paper as follows: 
 
-Rehmat Ullah, Di Wu,  Paul Harvey, Peter Kilpatrick, Ivor Spence and Blesson Varghese, "FedFly: Towards Migration in Edge-based Distributed Federated Learning", 2021.
+Rehmat Ullah, Di Wu, Paul Harvey, Peter Kilpatrick, Ivor Spence and Blesson Varghese, "FedFly: Towards Migration in Edge-based Distributed Federated Learning", 2021.
