@@ -20,12 +20,13 @@ FedFly was developed at the [Edge Computing Hub](https://edgehub.co.uk).
 
 ### Code Structure
 
-The repository contains the source code of FedFly. The code is organised as: 
+The repository contains the source code of FedFly. The overall architecture is divided as follows: 
 
-1) Federated learning training code using FedFly in `FL_training` folder under `Central Server` folder.
-2) Federated learning training code using FedFly in `FL_training` folder under `Source Edge Server` folder.
-3) Federated learning training code using FedFly in `FL_training` folder under `Destination Edge Server` folder.
-4) Federated learning training code using FedFly in `FL_training` folder under `Client/device` folder. 
+1) Central Server (Central Server for the FedAverage)
+2) Edge Servers (seperated as Source and Destination for migration)
+3) Devices
+
+The repository also arranges the Code folders according to the above described architecture.
 
 The results are saved as pickle files in the `results` folder on the Central Server. 
 
