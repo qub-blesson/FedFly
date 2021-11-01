@@ -40,7 +40,7 @@ The code is tested on Python 3 with Pytorch version 1.4 and torchvision 0.5.
 In order to test the code, install Pytorch and torchvision on each IoT device (Raspberry Pis). One can install from pre-built PyTorch and torchvision pip wheel. Please download respective pip wheel as follows:
 - Pyotrch: https://github.com/FedML-AI/FedML-IoT/tree/master/pytorch-pkg-on-rpi
 
-Or one may also visit https://github.com/Rehmatkhan/InstallPytrochScript and follow the simple steps to install and configure pytorch and torchvision on all Raspberry devices.
+Or one may visit https://github.com/Rehmatkhan/InstallPytrochScript and follow the simple steps as follows:
 ```
 # install and configure pytorch and torchvision on Raspberry devices
 #move to sudo
