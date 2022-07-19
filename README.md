@@ -12,7 +12,7 @@ FedFly is implemented and evaluated in a hierarchical cloud-edge-device architec
   <img src="FedFly System.png" alt="FedFly System width="200"/>
 </p>
 
-More information on the steps in relation to distributed FL and the mobility of devices within the FedFly system are presented in the research article entitled, [FedFly: Towards Migration in Edge-based Distributed Federated Learning](https://arxiv.org/pdf/2111.01516.pdf).
+More information on the steps in relation to distributed FL and the mobility of devices within the FedFly system are presented in the research article entitled, [FedFly: Towards Migration in Edge-based Distributed Federated Learning](https://arxiv.org/pdf/2111.01516.pdf), IEEE Communications Magazine, 2022.
                                                              
 ### Code Structure
 
