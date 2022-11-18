@@ -104,15 +104,16 @@ python FedFly_clientrun.py --offload True #FedFly training
 
 Please cite the paper as follows: 
 
-Rehmat Ullah, Di Wu, Paul Harvey, Peter Kilpatrick, Ivor Spence and Blesson Varghese, "FedFly: Towards Migration in Edge-based Distributed Federated Learning", IEEE Communications Magazine, 2022.
+Rehmat Ullah, Di Wu, Paul Harvey, Peter Kilpatrick, Ivor Spence and Blesson Varghese, "FedFly: Toward Migration in Edge-Based Distributed Federated Learning," in IEEE Communications Magazine, vol. 60, no. 11, pp. 42-48, November 2022, doi: 10.1109/MCOM.003.2100964.
 
 ```
-@misc{ullah2022fedfly,
-      title={FedFly: Towards Migration in Edge-based Distributed Federated Learning}, 
-      author={Rehmat Ullah and Di Wu and Paul Harvey and Peter Kilpatrick and Ivor Spence and Blesson Varghese},
-      year={2022},
-      eprint={2111.01516},
-      archivePrefix={arXiv},
-      primaryClass={cs.DC}
-}
+@ARTICLE{9846940,
+  author={Ullah, Rehmat and Wu, Di and Harvey, Paul and Kilpatrick, Peter and Spence, Ivor and Varghese, Blesson},
+  journal={IEEE Communications Magazine}, 
+  title={FedFly: Toward Migration in Edge-Based Distributed Federated Learning}, 
+  year={2022},
+  volume={60},
+  number={11},
+  pages={42-48},
+  doi={10.1109/MCOM.003.2100964}}
 ```
